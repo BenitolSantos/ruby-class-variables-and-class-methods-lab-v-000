@@ -22,7 +22,7 @@ class Song
   end
 
   def self.artists
-    @@artists.uniq!
+    @@artists.uniq! #.uniq puts down only unique elements. !bang makes it permanent
 
   end
 
