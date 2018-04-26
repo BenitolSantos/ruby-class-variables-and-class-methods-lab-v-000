@@ -14,13 +14,13 @@ class Song
     @@genres << @genre
     @@artists << @artist
     @@count += 1
-    num_of_songs_that_genre = @@genres.find_all{|i| i == @genre}.length
+    @num_of_songs_that_genre = @@genres.find_all{|i| i == @genre}.length
     #find_all returns an array.
     #finding all instances of a genre
     #length works because the array length always changes.
-    num_of_songs_by_that_artist = @@artists.find{|i| i == @artist}.length
-    @@genre_count[@genre] = num_of_songs_that_genre
-    @@artist_count[@artist] = num_of_song_by_that_artist
+    @num_of_songs_by_that_artist = @@artists.find{|i| i == @artist}.length
+    @@genre_count[@genre] = @num_of_songs_that_genre
+    @@artist_count[@artist] = @num_of_song_by_that_artist
 
 
   end
