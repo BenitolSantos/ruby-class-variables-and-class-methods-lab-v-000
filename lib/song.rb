@@ -19,7 +19,6 @@ class Song
     #finding all instances of a genre
     #length works because the array length always changes.
     @num_of_songs_by_artist = @@artists.find_all{|i| i == @artist}.length
-    binding.pry
     @@genre_count[@genre] = @num_of_songs_that_genre
     @@artist_count[@artist] = @num_of_songs_by_artist #WATCH YOUR SPELLING LOL -zdrake
     #tab is autocomplete
