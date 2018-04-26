@@ -14,7 +14,8 @@ class Song
     @@count += 1
   end
 
-  def count
+  def self.count #Song .count is a class method that returns that number of songs created
+    #
     @@count
   end
 
