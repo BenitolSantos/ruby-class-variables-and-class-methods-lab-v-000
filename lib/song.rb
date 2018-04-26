@@ -21,7 +21,7 @@ class Song
     @num_of_songs_by_artist = @@artists.find_all{|i| i == @artist}.length
     binding.pry
     @@genre_count[@genre] = @num_of_songs_that_genre
-    @@artist_count[@artist] = @num_of_song_by_that_artist
+    @@artist_count[@artist] = @num_of_song_by_artist
     #tab is autocomplete
 
 
