@@ -24,12 +24,12 @@ class Song
   end
 
   def self.artists
-    @@artists.uniq! #.uniq puts down only unique elements. !bang makes it permanent
+    @@artists.uniq #.uniq puts down only unique elements. !bang makes it permanent
 
   end
 
   def self.genres
-    @@genres.uniq!
+    @@genres.uniq
   end
 
   def self.genres_count
