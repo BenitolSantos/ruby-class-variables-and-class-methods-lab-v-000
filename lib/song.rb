@@ -25,6 +25,7 @@ class Song
     @@artists.sort do |this_artist,next_artist|
       this_artist.delete_if { this artist == next_artist}
     end
+    @@artists
 
   end
 
