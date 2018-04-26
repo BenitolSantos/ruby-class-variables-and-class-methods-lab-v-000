@@ -47,7 +47,6 @@ class Song
 
   def self.artist_count
     @@artist_count.keys.length
-    binding.pry
   end
 
 end
