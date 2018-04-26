@@ -22,7 +22,7 @@ class Song
   end
 
   def self.artists
-    @@artists
+    @@artists.sort 
   end
 
   def self.genres
