@@ -22,7 +22,10 @@ class Song
   end
 
   def self.artists
-    @@artists.sort 
+    @@artists.sort do |this_artist,next_artist|
+      this_artist.delete_if {|artist| }
+    end
+      
   end
 
   def self.genres
