@@ -10,10 +10,10 @@ class Song
   def initialize(name,artist,genre)
     @name = name
     @artist = artist
+    @@genres << @genre
+    @@genres_count[@@genres] = @@genres.length #length works because the array length always changes.
     @@artists << @artist
     @genre = genre
-    @@genres << @genre
-    @@genres_count[@@genres] = @@genres.length #length works because the array length always changes. 
     @@count += 1
   end
 
