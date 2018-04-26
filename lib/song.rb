@@ -15,6 +15,7 @@ class Song
     @@genres << @genre
     @@genres
     @@count += 1
+    @genre_count[@genre] = @name 
     
   end
 
