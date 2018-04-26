@@ -14,8 +14,8 @@ class Song
     @genre = genre
     @@genres << @genre
     @@genres
-
     @@count += 1
+    
   end
 
   def self.count #Song .count is a class method that returns that number of songs created
