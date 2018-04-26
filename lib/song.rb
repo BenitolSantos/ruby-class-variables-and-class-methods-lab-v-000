@@ -13,7 +13,7 @@ class Song
     @@artists << @artist
     @genre = genre
     @@genres << @genre
-    @@genres_count[@@genres] = @@genres.length 
+    @@genres_count[@@genres] = @@genres.length #length works because the array length always changes. 
     @@count += 1
   end
 
