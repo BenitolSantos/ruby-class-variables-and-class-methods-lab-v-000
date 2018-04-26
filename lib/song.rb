@@ -18,7 +18,6 @@ class Song
     #find_all returns an array.
     #finding all instances of a genre
     #length works because the array length always changes.
-    binding.pry
     @num_of_songs_by_that_artist = @@artists.find{|i| i == @artist}.length
     @@genre_count[@genre] = @num_of_songs_that_genre
     @@artist_count[@artist] = @num_of_song_by_that_artist
