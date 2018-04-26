@@ -14,11 +14,11 @@ class Song
     @@genres << @genre
     @@artists << @artist
     @@count += 1
-    num_of_songs_that_genre = @@genres.find_all{|i| i == @genre}.length #find_all returns an array. 
+    num_of_songs_that_genre = @@genres.find_all{|i| i == @genre}.length #find_all returns an array.
     #finding all instances of a genre
     @@genres_count[@genre] = num_of_songs_that_genre 
     #length works because the array length always changes.
-  
+
   end
 
   def self.count #Song .count is a class method that returns that number of songs created
