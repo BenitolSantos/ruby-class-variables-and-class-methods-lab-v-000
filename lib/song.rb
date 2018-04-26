@@ -14,8 +14,8 @@ class Song
     @@genres << @genre
     @@artists << @artist
     @@count += 1
-    @@genres_count[@@genres] = @@genres.length #length works because the array length always changes.
-    @@artists_count[@@artist] = @@artist.length
+    @@genres_count[@genre] = @@genres.length #length works because the array length always changes.
+    @@artists_count[@artist] = @@artist.length
   end
 
   def self.count #Song .count is a class method that returns that number of songs created
