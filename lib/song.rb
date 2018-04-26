@@ -22,6 +22,7 @@ class Song
     @@genre_count[@genre] = @num_of_songs_that_genre
     @@artist_count[@artist] = @num_of_songs_by_artist #WATCH YOUR SPELLING LOL -zdrake
     #tab is autocomplete
+    #!!! reruns test in pry
 
 
   end
