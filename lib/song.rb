@@ -14,6 +14,7 @@ class Song
     @@genres << @genre
     @@artists << @artist
     @@count += 1
+    @@genres.find_all{@genre}.length #find_all returns an array.
     #@@genres_count[@genre] = @@genres.length #length works because the array length always changes.
     #@@artists_count[@artist] = @@artist.length
   end
@@ -31,6 +32,8 @@ class Song
   def self.genres
     @@genres.uniq
   end
+
+  
 
   def self.genres_count
     @@genres_count
