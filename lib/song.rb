@@ -18,10 +18,11 @@ class Song
     #find_all returns an array of only that genre.
     #finding all instances of a genre
     #length works because the array length always changes.
-    @num_of_songs_by_that_artist = @@artists.find_all{|i| i == @artist}.length
+    @num_of_songs_by_artist = @@artists.find_all{|i| i == @artist}.length
     binding.pry
     @@genre_count[@genre] = @num_of_songs_that_genre
     @@artist_count[@artist] = @num_of_song_by_that_artist
+    #tab is autocomplete
 
 
   end
