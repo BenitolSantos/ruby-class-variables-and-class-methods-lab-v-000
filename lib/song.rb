@@ -15,7 +15,8 @@ class Song
     @@genres << @genre
     @@genres
     @@count += 1
-    @genre_count[@genre] = num_of_songs
+    @num_of_songs += 1
+    @genre_count[@genre] = @num_of_songs
 
   end
 
