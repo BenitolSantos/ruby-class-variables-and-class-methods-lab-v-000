@@ -23,7 +23,7 @@ class Song
 
   def self.artists
     @@artists.sort do |this_artist,next_artist|
-      this_artist.delete_if { this artist == next_artist}
+      this_artist.delete_if { |artist| artist == next_artist }
     end
     @@artists
 
