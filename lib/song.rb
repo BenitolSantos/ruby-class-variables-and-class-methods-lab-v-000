@@ -22,15 +22,12 @@ class Song
   end
 
   def self.artists
-    @@artists.sort do |this_artist,next_artist|
-      this_artist.delete_if { |artist| artist == next_artist }
-    end
-    @@artists
+    @@artists.uniq!
 
   end
 
   def self.genres
-    @@genres
+    @@artists.uniq!
   end
 
   def self.genres_count
